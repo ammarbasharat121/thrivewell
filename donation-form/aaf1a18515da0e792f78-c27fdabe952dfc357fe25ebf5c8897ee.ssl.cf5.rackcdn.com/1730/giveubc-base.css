@@ -1,0 +1,2530 @@
+/*
+##############################################################
+# Reset CSS
+# Reset unnecessary default styles come from EN 
+##############################################################
+*/
+body {
+    margin: 0;
+    font-size: 16px;
+    background: white;
+}
+
+h1, h2 {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: inherit;
+}
+
+input[type="text"],
+input[type="email"], 
+input[type="tel"] {
+    margin-bottom: 0;
+}
+
+form p {
+    margin: 0;
+}
+
+label,
+input[type="checkbox"] {
+    margin: 0;
+}
+
+label,select,button,input[type="button"],input[type="reset"],input[type="submit"],input[type="radio"],input[type="checkbox"] {
+    cursor: pointer
+}
+
+select {
+    width: auto;
+    margin-bottom: 0;
+    border: none;
+    border-bottom: 2px solid lightgray;
+}
+
+.en__component--column {
+    /* IE11 is not compatible with min-width: initial,
+       so use other value to override EN default value */
+    min-width: inherit;
+}
+
+.en__field__item {
+    padding: 0;
+}
+
+.en__field__label {
+    width: auto;
+    padding: 0;
+}
+
+.en__field__input--select {
+    min-width: 0;
+}
+
+.en__field--radio .en__field__label, 
+.en__field--checkbox .en__field__label,
+.en__field--textarea .en__field__label {
+    vertical-align: middle;
+}
+
+
+/*
+##############################################################
+# Custom Styles
+##############################################################
+*/
+body {
+    /* font-family: 'Whitney SSm A'; */
+    font-family: 'Whitney SSm A','Whitney SSm B',Arial,Helvetica,sans-serif;
+    /* font-family: 'Whitney SSm B',Arial,Helvetica,sans-serif; */
+    color: #002145;
+}
+
+form {
+    box-sizing: border-box;
+    padding: 0;
+    margin-bottom: 1.125rem;
+}
+
+form h1 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+form h2 {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    padding: 0;
+    font-weight: normal;
+    font-size: 30px;
+    background-color: transparent;
+    color: #002145;
+}
+
+select,
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    border: none;
+    border-bottom: 1px solid #002145;
+    outline: none;
+    padding: 0 5px;
+    height: 1.875rem;
+    /* font-family: 'Whitney SSm A'; */
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 1.125rem;
+}
+
+#ubc7-footer {
+    margin: 0;
+}
+
+/* EN related general styles */
+/* Space adjustments for each section  */
+.en__field {
+    padding-bottom: 1.375rem;
+}
+
+.en__field.en__field--checkbox {
+    padding-bottom: 4px;
+}
+
+.en__field--NOT_TAGGED_26,
+.en__field--NOT_TAGGED_27 {
+    margin-bottom: 0;
+}
+
+.en__field--NOT_TAGGED_34 {
+    padding-bottom: 0;    
+}
+
+.en__field--ccnumber {
+    margin: 15px 0;
+}
+
+.privacy-and-security-section {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.relationship-heading {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.subscribe-section {
+    margin-bottom: 20px;
+}
+
+.en__field__input--text,
+.en__field__input--email,
+.en__field__input--telephone {
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid lightgray;
+    outline-style: none;
+}
+
+.en__field__element--text,
+.en__field__element--email,
+.en__field__element--telephone {
+    width: 100%;
+}
+
+.en__field__input--radio {
+    display: none;
+}
+
+.en__field__input--select,
+.en__field__input--splitselect {
+    padding: 0;
+}
+
+.en__field--ccexpire .en__field__input--splitselect {
+    width: 75px;
+}
+
+.en__field__label {
+    display: inline;
+    font-size: 1rem;
+    font-family: 'Merriweather', serif;
+}
+
+.en__field__label--positionabove {
+    display: inline-block;
+}
+
+.en__field__element--select,
+.en__field__element--splitselect {
+    display: block;
+}
+
+.step1 .en__field__label {
+    /* font-size: 1.125rem; */
+}
+.step1 .en__field__input--select {
+    /* font-size: 1.25rem; */
+    font-size: 1.125rem;
+}
+.step1 input[type="text"] {
+    font-size: 1.125rem;
+}
+
+.en__field--dirgift .en__field__label {
+    display: none;
+}
+
+/* multiple column blank style */
+.en__component--row {
+    justify-content: space-between;
+}
+
+.en__component--column:last-child {
+    padding-right: 0;
+}
+
+.en__field__element--tripletext {
+    display: flex;
+}
+
+.en__field__element--tripletext .en__field__item {
+    flex: 1 1 auto;
+    padding-right: 10px;
+}
+
+.en__field__element--tripletext .en__field__item:last-child {
+    padding-right: 0;
+}
+
+.en__field__input--tripletext {
+    padding: 0;
+    width: 100%;
+}
+
+.en__field--creditCardHolderName {
+    margin-bottom: 0;
+}
+
+/* Checkbox styles */
+.en__field--checkbox > .en__field__label {
+    display: none;
+}
+
+.en__field__input.en__field__input--checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+/* Subscription check box styles */
+#en__field_supporter_questions_138600 {
+    /* Configure to prevent the lable text from going under the checkbox */
+    float: left;
+}
+
+#en__field_supporter_questions_138600 + .en__field__label--item {
+    /* Configure to prevent the lable text from going under the checkbox */
+    display: block;
+    overflow: hidden;
+    padding-left: 5px;
+    font-size: 12px;
+}
+
+/* Dropdown styles */
+.en__field--country .en__field__element--select,
+.en__field--country .en__field__element--select .en__field__input--select {
+    width: 100%;
+}
+
+/* Mandatory field star styles */
+.en__mandatory > .en__field__label::after {
+    content: "*";
+    color: #002145;
+}
+
+.en__mandatory.en__field--othamt4 > .en__field__label::after {
+    content: "";
+}
+
+.en__mandatory.en__field--donationAmt > .en__field__label::after {
+    content: "";
+}
+
+/* cardholder note styles */
+.cardholder-note p {
+    font-size: 0.8125rem;
+    color: #657c92;
+    font-weight: 600;
+}
+
+.securedby {
+    float: none;
+    padding-top: 10px;
+    text-align: right;
+    border-color: transparent;
+}
+
+/* Can not hide by EN's input hidden field type since then it won't send the value to backend */
+.en__field--othamt1,
+.en__field--othamt3 {
+    display: none;
+}
+
+.content {
+    padding: 0;
+}
+
+
+
+/*
+##############################################################
+# Step navigation styles
+##############################################################
+*/
+.step-nav {
+    font-size: 16px;
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+    border-bottom: none;
+}
+
+.step-list {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.0625rem;
+    margin: 0;
+    padding-left: 0px;
+}
+
+.step-item {
+    flex: 0 1 0;
+    list-style: none;
+}
+
+.step-item a {
+    display: block;
+    text-decoration: none;
+    cursor: pointer;
+    color: #657c92;
+}
+
+.step-item a:link, .step-item a:visited {
+    /* color: #002145; */
+}
+
+.step-item a:hover {
+    color: #002145;
+    text-shadow: initial;
+}
+
+.step-item a.nav-hover {
+    /* text-shadow: 1px 0 0 #002145; */
+}
+
+.step-item a.active {
+    color: #002145;
+    /* alternative way of font-weight:bold to prevent 
+    step-nav characters from shifting when hovered    */
+    /* text-shadow: 1px 0 0 #002145; */
+}
+
+/*
+##############################################################
+# Multi page styles
+##############################################################
+*/
+.step1 {
+    display: block;
+}
+.step2,
+.step3 {
+    display: none;
+}
+
+
+/*
+##############################################################
+# Radio button and other input filed styles
+##############################################################
+*/
+.en__field__element--radio {
+    display: flex;
+    flex-wrap: wrap;
+}
+.en__field--donationAmt .en__field__element--radio {
+    justify-content: space-around;
+}
+
+.en__field__element--radio > .en__field__item {
+    flex: 0 0 47%;
+}
+.en__field--othamt4 .en__field__element--radio {
+    justify-content: space-between;
+}
+
+.en__field__element--radio > .en__field__item:last-child {
+    padding-right: 0;
+}
+
+.en__field--paymenttype .en__field__element--radio > .en__field__item:nth-child(2n) {
+    padding-right: 0;
+}
+
+.en__field--paymenttype .en__field__element--radio {
+    justify-content: space-between;
+}
+
+.en__field--paymenttype .en__field__element--radio > .en__field__item {
+    flex: 0 0 49%;
+    margin-bottom: 5px;
+}
+
+.en__field--donationAmt .en__field__element--radio {
+    flex-wrap: wrap;
+}
+
+.en__field--donationAmt .en__field__element--radio > .en__field__item {
+    flex: 0 0 30%;
+    margin-bottom: 12px;
+    height: 3rem;
+}
+
+.en__field--donationAmt .en__field__element--radio > .en__field__item.en__field__item--other {
+    flex: 0 0 30%;
+    margin-bottom: 0px;
+    background-color: #002145;
+    border-radius: 8px;
+    font-family: 'Merriweather', serif;
+}
+
+.en__field--donationAmt .en__field__element--radio > .en__field__item:nth-last-child(2) {
+    flex: 0 0 30%;
+    margin-bottom: 0;
+    padding-right: 0;
+}
+
+.step1 .en__field--radio > .en__field__label {
+    margin-bottom: 1.625rem;
+    font-size: 1.75rem;
+}
+
+.en__field--radio > .en__field__label {
+    margin-bottom: 0.25rem;
+}
+
+.en__field--radio.en__field--NOT_TAGGED_50 .en__field__element--radio {
+    justify-content: space-between;
+}
+
+.en__field--paymenttype > .en__field__label,
+.en__field--NOT_TAGGED_50 > .en__field__label {
+    /* To show label for some radio fields */
+    display: inline-block;
+}
+
+.en__field__input--radio + .en__field__label--item {
+    /* Centering the label characters vertically */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+    height: 3rem;
+    line-height: 1rem;
+    text-align: center;
+    background-color: lightgray;
+    color: #002145;
+    transition: all 0.2s linear 0.1s;
+    transition-property: background-color, color;
+    border-radius: 8px;
+    font-family: 'Merriweather', serif;
+    font-weight: normal;
+}
+
+.en__field--donationAmt .en__field__input--radio + .en__field__label--item {
+    height: 3rem;
+}
+
+.en__field--NOT_TAGGED_50 .en__field__input--radio + .en__field__label--item {
+    height: 2em;
+}
+
+.en__field__input--radio + .en__field__label--item:hover {
+    background-color: #e69400 ;
+    color: #ffffff;
+    transition: all 0.2s linear 0.1s;
+    transition-property: background-color, color;
+}
+
+.en__field__input--radio:checked + .en__field__label--item {
+    background-color: #002145;
+    color: #ffffff;
+    transition: all 0.2s linear 0.1s;
+    transition-property: background-color, color;
+}
+
+/* other input field styles */
+.en__field__item--other {
+    /* center the other amount input text field. 
+    Can't make the specificity storonger by using general class name since 
+    that break EN's other input field display toggle structure */
+    display: flex;
+    align-items: center;
+}
+
+.en__field__item--other {
+    margin-bottom: 0;
+}
+
+.en__field__input--other {
+    margin: 0;
+}
+
+/* Other input style for Donation Amount */
+.en__field--donationAmt .en__field__input--other {
+    width: 100%;
+    margin-left: 0.315rem;
+    background-color: #002145;
+    border: none;
+    border-bottom: 1px solid gray;
+    color: #ffffff;
+    outline: none;
+    padding-top: 0.625rem;
+    margin: 0 0.5rem 0.5rem 0.315rem;
+}
+
+.en__field--donationAmt .en__field__item--other::before {
+    /* Dollar mark for the donation amount other input */
+    content:"\0024";
+    font-size: 1rem;
+    color: white;
+    padding-left: 8px;
+}
+
+/* Other input style for UBC relationship */
+.en__field--NOT_TAGGED_34 .en__field__item--other {
+    max-width: 359px;
+}
+
+.en__field--NOT_TAGGED_34 .en__field__input--other {
+    width: 100%;
+}
+
+.en__field--NOT_TAGGED_34 .en__field__element--select {
+    width: 100%;
+}
+
+.en__field--NOT_TAGGED_34 .en__field__input--select {
+    margin-top: 5px;
+    margin-bottom: 8px;
+}
+
+
+/*
+##############################################################
+# Step navigation button styles
+##############################################################
+*/
+form > .en__component--advrow:nth-last-child(2) {
+    justify-content: space-between;
+}
+
+form > .en__component--advrow:nth-last-child(2) > .en__component {
+    padding-bottom: 1.375rem;
+}
+
+form > .en__component--advrow:nth-last-child(2) .en__component--advcolumn {
+    /* IE11 flex-shrink default value is 0 which different from other browsers
+       so need to specify it as 1 explicitly */
+    flex: 0 1 auto;
+    width: 100%;
+}
+
+.step-nav-button-field {
+    margin-top: 16px;
+}
+
+.step-nav-button {
+    height: 3rem;
+    margin-right: 10px;
+    border: 2px solid #002145;
+    background-color: #ffffff;
+    color: #002145;
+    border-radius: 100px;
+    outline: none;
+    transition: all 0.2s linear 0.1s;
+}
+.step-nav-button:not(.step-nav-button--disabled):hover {
+    color: #ffffff;
+    background-color: #002145;
+}
+
+.step-nav-button:last-child {
+    margin-right: 0;
+}
+
+.step-nav-button--fluid {
+    width: 100%;
+}
+
+.step-nav-button--disabled {
+    border: 2px solid gray;
+    color: gray;
+    opacity: 0.4;
+    cursor: default;
+}
+
+.step-nav-button--half {
+    width: 50%;
+}
+
+.step-nav-button--large {
+    height: 55px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.step-nav-button--medium {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.step-nav-button-field {
+    display: flex;
+    justify-content: space-between;
+}
+
+.last-step-back-button-container {
+    display: flex;
+    margin-top: 28px;
+}
+
+.en__submit {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 28px;
+}
+
+.en__submit button {
+    width: 100%;
+    height: 3rem;
+    border: none;
+    border-radius: 100px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    background: linear-gradient(124.88deg, #e69400 0, #c86700 100%);
+    color: #ffffff;
+}
+
+
+/*
+##############################################################
+# Accordion styles
+##############################################################
+*/
+
+.other-detail,
+.privacy-and-security-detail {
+    max-height: 0;
+    visibility: hidden;
+    transition: max-height 0.2s;
+}
+
+.other-detail p,
+.privacy-and-security-detail p {
+    /* font-family: 'Whitney SSm A'; */
+    font-size: 0.75rem;
+    line-height: 1.125rem;
+}
+
+.other-detail p strong,
+.privacy-and-security-detail p strong {
+    font-size: 0.875rem;
+}
+
+.other-detail.visible,
+.privacy-and-security-detail.visible {
+    margin-bottom: 20px;
+    height: auto;
+    max-height: 1600px;
+    visibility: visible;
+    transition: max-height 0.35s;
+}
+
+.other-detail.visible.en__component--formblock {
+    margin-bottom: 0px;
+}
+
+.other-accordion-button,
+.privacy-and-security-accordion-button {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 0;
+    border: none;
+    text-align: left;
+    /* font-family: 'Whitney SSm A'; */
+    font-size: 1.125rem;
+    background-color: transparent;
+    color: #002145;
+}
+
+.other-accordion-button:focus,
+.privacy-and-security-accordion-button:focus {
+    outline: 0;
+}
+
+.other-accordion-button::after,
+.privacy-and-security-accordion-button::after {
+    /* For IE11. Prevent accordion button from shifting down when pressed */
+    position: relative;
+    /* Unicode character for "plus" symbol (+) */
+    content: "\f067";
+    font-family: FontAwesome;
+    font-size: 0.8125rem;
+    color: #002145;
+    margin-left: 5px;
+}
+
+.other-detail-expand::after,
+.privacy-and-security-detail-expand::after {
+    /* Unicode character for "minus" symbol (-) */
+    content: "\f068";
+    font-family: FontAwesome;
+}
+
+.other-accordion-button span,
+.privacy-and-security-accordion-button span {
+    /* For IE11. Prevent accordion button from shifting down when pressed */
+    position: relative;
+}
+
+
+/*
+##############################################################
+# Give by payroll styles
+##############################################################
+*/
+.give-by-payroll-section {
+    margin-bottom: 20px;
+    /* font-family: 'Whitney SSm A'; */
+    /* font-size: 25px; */
+    font-size: 1.5625rem;
+    /* font-weight: bold; */
+    color: #002145;
+}
+
+.give-by-payroll-section a:link {
+    color: #002145;
+}
+
+.give-by-payroll-section a:visited {
+    color: #002145;
+}
+
+.give-by-payroll-section a:hover {
+    color: #40B4E5;
+    text-decoration: underline;
+}
+
+.give-by-payroll-section a:active {
+    color: #40B4E5;
+}
+
+
+/*
+##############################################################
+# CVD help styles
+##############################################################
+*/
+.cvd-tip {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    font-size: 18px;
+}
+
+.cvd-tip__text--bold {
+    font-weight: bold;
+}
+
+.cvd-prompt {
+    /* Position the tooltip */
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    z-index: 1;
+    visibility: hidden;
+    width: 200px;
+    padding: 5px 10px;
+    line-height: 1.3em;
+    /* font-family: 'Whitney SSm A'; */
+    font-size: 0.6875rem;
+    text-align: left;
+    background-color: #002145;
+    color: #ffffff;
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.cvd-prompt::after {
+    /* Make tooltip Baloon like by putting an triangle to the bottom of the tooltip */
+    content: " ";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #002145 transparent transparent #002145;
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.cvd-tip:hover .cvd-prompt, 
+.cvd-hover .cvd-prompt {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+.cvd-tip:hover .cvd-prompt::after,
+.cvd-hover .cvd-prompt::after {
+    opacity: 1;
+    transition: all 0.2s;
+}
+
+
+/*
+##############################################################
+# Text block styles
+##############################################################
+*/
+.privacy-and-security-section p {
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+}
+
+.privacy-and-security-section p strong {
+    font-size: 20px;
+}
+
+.subscribe-section p {
+    font-size: 12px;
+    line-height: 20px;
+}
+
+
+/*
+##############################################################
+# Error message styles
+##############################################################
+*/
+/* Client side validation error message styles */
+.en__field__error {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    /* font-size: 14px; */
+    font-size: 13px;
+    color: #ff0000;
+}
+
+.en__field__error + .en__field__label,
+.en__field__error + .en__field__label + .cvd-tip {
+    /* color: #ff0000; */
+}
+
+.en__field__error::before {
+    margin-right: 5px;
+    content: "\f06a";
+    font-family: FontAwesome;
+    color: #ff0000;
+}
+
+.en__field__error + .en__field__label + .en__field__element .en__field__input--text,
+.en__field__error + .en__field__label + .cvd-tip + .en__field__element .en__field__input--text,
+.en__field__error + .en__field__label + .en__field__element .en__field__input--email,
+.en__field__error + .en__field__label + .en__field__element .en__field__input--telephone {
+    border-color: #ff9999;
+    background-color: rgba(255,0,0,0.062);
+}
+
+.en__field__error + .en__field__label + .en__field__element .en__field__input--other {
+    border-color: #ff3333;
+}
+
+/* Server side validation error message styles */
+.en__errorHeader,
+.en__errorList {
+    color: #ff0000;
+}
+
+.en__errorHeader {
+    padding-top: 10px;
+}
+
+.en__errorList {
+    list-style-position: inside;
+}
+
+.step-nav-container {
+    display: none;
+}
+
+
+/*
+##############################################################
+# New styles for GiveUBC donation form
+##############################################################
+*/
+
+/* header and footer codes from GiveUBC */
+/* header */
+.give-ubc-logo {
+    display: block;
+    width: 5.125rem;
+    height: 1.25rem;
+    background: url(https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/give_ubc_logo.png?v=1593714936000) no-repeat center center;
+    background-size: contain;
+    font-size: 0;
+}
+
+.logo-heading {
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    background: #002145;
+}
+
+@media screen and (max-width: 767px) {
+/*@media screen and (max-width: 1024px) {*/
+    .give-ubc {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        padding: 20px 23px
+    }
+    .give-ubc-logo {
+        margin-top: 0;
+    }
+    .logo-heading .title-section > a {
+        margin: 25px 0 25px 75px;
+    }
+    .logo-heading {
+        border-bottom: none;
+        padding: 0;
+    }
+    .logo-section {
+        border-right: none;
+        position: absolute;
+        left: 25px;
+        top: 0;
+        padding: 20px 12.5px 20px 0
+    }
+    .title-section {
+        padding: 0;
+        width: 100%;
+    }
+}
+
+/* footer */
+.footer-university {
+    background: #002145;
+    color: #fff;
+    width: 100%;
+    font-family: Arial;
+    font-size: 14px;
+}
+.footer-university ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer-university ul li {
+    color: rgba(255,255,255,.6);
+}
+.footer-univeristy-top {
+    position: relative;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-flow: wrap;
+    flex-flow: wrap;
+    padding: 37.5px 60px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.footer-top ul:not(.social-media) li a, .footer-university ul li a {
+    opacity: .8;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-university ul li:first-of-type {
+    margin: 25px 0 12.5px;
+}
+
+.footer-university .ubc-wordmark.desktop {
+    width: 19.0625rem;
+    height: .9375rem;
+    display: block;
+}
+
+.footer-univeristy-top .ubc-logo {
+    display: flex;
+}
+
+.footer-univeristy-top .ubc-logo>a:first-of-type {
+    margin-right: 12.5px;
+
+}
+
+.footer-university ul li {
+    margin: 12.5px 0;
+}
+
+.footer-univeristy-legal {
+    border-top: solid .0625rem rgba(255,255,255,.6);
+    padding: 18.75px 0;
+    width: calc(100% - 120px);
+    margin: 0 auto;
+    background: #002145;
+    color: #fff;
+}
+
+.footer-univeristy-legal a {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    padding: 8px 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-univeristy-legal a:after {
+    content: '|';
+    padding: 0 12.5px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-top>div, .footer-univeristy-top>div {
+        width: 100%;
+    }
+    .footer-university b {
+        border-bottom: none;
+        padding: 50px 0 0;
+    }
+    .footer-univeristy-top {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .footer-bottom, .footer-top, .footer-univeristy-top {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        padding: 25px 25px;
+    }
+    .footer-univeristy-legal {
+        margin-top: 25px;
+        padding: 25px 0;
+        width: calc(100% - 50px);
+    }
+    .footer-university .ubc-wordmark.desktop {
+        display: none;
+    }
+    .footer-university-center, .footer-university-left, .footer-university-right {
+        padding-top: 25px;
+    }
+}
+@media screen and (min-width: 1021px) {
+    .footer-top>div:nth-of-type(1), .footer-univeristy-top>div:nth-of-type(1) {
+        width: 38%;
+    }
+    .footer-top>div, .thinkingblocks-Footer .footer-univeristy-top>div {
+        width: 18%;
+    }
+    .footer-univeristy-top>div {
+        width: 18%;
+    }
+}
+
+/* codes override GiveUBC header and footer styles */
+#ubc7-logo a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+#ubc7-logo {
+    /* background-image: url("https://cdn.ubc.ca/clf/7.0.4/img/ubc7-clf-sprite-blue.png"); */
+    background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/ubc7-clf-sprite-white.png?v=1596576573000");
+    background-repeat: no-repeat;
+    background-position: 32px 14px;
+    /* margin-left: -15px; */
+    margin-left: -8px;
+    min-width: 115px;
+    height: 100%;
+}
+
+#ubc7-wordmark a {
+    display: block;
+    height: 100%;
+    width: 80%;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+}
+
+.title-section {
+    width: 80%;
+}
+
+#ubc7-wordmark {
+    background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/ubc7-clf-sprite-white.png?v=1596576573000");
+    background-position: 20px -284px;
+    width: 100%;
+    height: 64px;
+    border-bottom: 1px solid rgba(255,255,255,.6);
+}
+
+.give-ubc {
+    margin-left: 0;
+
+}
+
+.logo-section {
+    max-width: 70px;
+    height: 115px;
+    display: none;
+
+}
+
+.title-section {
+    width: 100%;
+}
+
+.ubc-logo {
+    width: 100%;
+}
+
+.ubc-logo a {
+    background-size: auto;
+    background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/ubc7-clf-sprite-white.png?v=1596576573000");
+    background-position: -2px -290px;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
+    width: 200px;
+    height: 50px;
+}
+/* End of header and footer codes from GiveUBC */
+
+.r1 {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.r2 {
+    padding: 20px;
+}
+
+.hero-image-wrapper {
+    /* background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/give-ubc-hero-horizontal.jpg?v=1593819085000"); */
+    padding-bottom: 39.013671875%; /* Image Height / Image Width * 100 */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.form-header h2 {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+}
+
+.form-header h1 {
+    font-weight: normal;
+}
+
+.form-header-form-name,
+.form-header-title,
+.form-header-description {
+    /* word-wrap: break-word is necessary for IE11 compatibility since IE11 give only partial support ofr overflow-wrap: anywhere */
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+
+.form-header-form-name {
+    color: #e8850b;
+    font-size: 0.875rem; 
+    margin: 0;
+}
+
+.form-header-title {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.form-header-description {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    line-height: 2rem;
+    font-family: 'Whitney SSm A';
+    color: gray;
+}
+
+.content-container option {
+    font-weight: 300;
+}
+
+.content-container h1,
+.content-container h3,
+.en__field--radio > .en__field__label {
+    font-family: 'Whitney SSm A';
+    font-weight: normal;
+}   
+
+.content-container h3 {
+    font-size: 1.75rem;
+    margin: 0 0 1.75rem;
+}
+
+.content-container h4 {
+    margin: 0;
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+
+.content-container .step1 h3:first-child,
+.content-container .step2 h3:first-child,
+.content-container .step3 h3:first-child {
+    margin-top: 8px;
+}
+
+.content-container .en__field__element--select select[name="supporter.title"] {
+    font-size: 1rem;
+}
+
+.en__field__input--select {
+    border: none;
+    border-bottom: 1px solid #002145;
+    outline-style: none;
+}
+
+.en__field--othamt4 {
+    border-bottom: 1px solid #efefef;
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+hr {
+    border: none;
+    border-bottom: 1px solid #efefef;
+    margin: 18px 0 40px;
+}
+
+.en__field--donationAmt .en__field__item:nth-last-child(2) {
+    display: none;
+}
+
+.give-by-payroll-section p {
+    margin: 0;
+}
+
+.en__field--NOT_TAGGED_50 > .en__field__label {
+    /* display: none; */
+    font-family: 'Merriweather', serif;
+}
+
+/* Credit Card icon background sizes */
+.en__field--paymenttype .en__field__item:nth-child(-n+3) .en__field__label--item {
+    background-color: #002145;
+    flex: 0 0 3.5rem;
+    height: 3.75rem;
+    width: 5.625rem;
+    line-height: normal;
+}
+
+.en__field--paymenttype .en__field__item:nth-child(-n+3) .en__field__label--item:hover {
+    background-color: #ffffff;
+}
+
+.en__field--paymenttype .en__field__item:nth-child(-n+3) .en__field__input--radio:checked + .en__field__label--item {
+    background-color: #ffffff;
+}
+
+/* Credit Card icon sizes */
+.en__field--paymenttype .en__field__item .en__field__label--item::after {
+    font-size: 4.4375rem;
+}
+
+/* Visa Card icon */
+.en__field--paymenttype .en__field__item:nth-child(1) .en__field__label--item::after {
+    content: "\f1f0";
+}
+
+/* Master Card icon */
+.en__field--paymenttype .en__field__item:nth-child(2) .en__field__label--item::after {
+    content: "\f1f1";
+}
+
+/* AMEX Card icon */
+.en__field--paymenttype .en__field__item:nth-child(3) .en__field__label--item::after {
+    content: "\f1f3";
+}
+
+/* alumni UBC Card style */
+.en__field--paymenttype .en__field__item:nth-child(4) .en__field__label--item {
+    width: 5.625rem;
+    height: 3.75rem;
+    padding: 0.025rem 0;
+    line-height: normal;
+    font-size: 0.825rem;
+}
+
+/* payment type (credit card buttons) styles */
+/* Decide the credit card type buttons container width so it makes 2 rows instead of 1 */
+.en__field--paymenttype .en__field__element--radio {
+    width: 320px;
+}
+
+.en__field--paymenttype .en__field__element--radio > .en__field__item {
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-right: 0;
+}
+
+.en__field--paymenttype .en__field__element--radio > .en__field__item:nth-child(n+3) {
+    margin-bottom: 0;
+}
+
+.en__field--paymenttype .en__field__element--radio > .en__field__item:last-child {
+    margin-right: 0;
+}
+
+.en__field--paymenttype .en__field__element--radio > .en__field__item {
+    flex: 0 0 5.625rem;
+}
+
+.en__field--paymenttype .en__field__item:nth-child(-n+3) .en__field__label--item::after {
+    color: lightgray;
+    font-family: FontAwesome;
+}
+
+.en__field--paymenttype .en__field__item:nth-child(-n+3) .en__field__label--item:hover::after {
+    color: #e69400;
+}
+
+.en__field--paymenttype .en__field__item:nth-child(-n+3) .en__field__input--radio:checked + .en__field__label--item::after {
+    color: #002145;
+}
+
+.en__field--paymenttype .en__field__element--radio {
+    justify-content: flex-start;
+}
+
+.step-item a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step-item a.active {
+    background-color: #efefef;
+    transition: background-color 0.2s linear;
+}
+
+/* fade in animation for the step navigation bar checkbox */
+@keyframes animateCheckMark {
+  0% {
+    color: white;
+  }
+  100% {
+    content: "\f00c";
+  }
+}
+
+/* step item visited check mark */
+.step-item a[href="#"]:not(.active)::after {
+    content: "\f00c";
+    font-family: FontAwesome;
+    margin-right: 16px;
+    animation: animateCheckMark 1s forwards;
+    color: #657c92;
+}
+
+.content-container hr.hr-full-margin {
+    margin-top: 40px;
+}
+
+.content-container hr.hr-step-last {
+    border: 1px solid #efefef;
+}
+
+.en__field--paymenttype > .en__field__label {
+    display: none;
+}
+
+.en__field--ccnumber.en__field {
+    padding-bottom: 2.7rem;
+}
+
+.en__component--column.en__component--advcolumn {
+    min-width: inherit;
+}
+
+.content-container select {
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 20px;
+    border-radius: 0;
+    background-color: transparent;
+    overflow: hidden;
+    /* Remove select box default style except for IE11 */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+/* Remove select box default style from IE11 */
+.content-container select::-ms-expand {
+    display: none;
+}
+
+/* Select box arrow styles */
+.en__field--select .en__field__item:not(.en__field__item--other), 
+.en__component--advcolumn .en__field--select .en__field__element--select, 
+.en__field__element--splitselect .en__field__item:not(.en__field__item--other) {
+    position: relative;
+}
+
+/* Select box arrow styles */
+.en__field--select .en__field__item:not(.en__field__item--other)::after,
+.en__component--advcolumn .en__field--select .en__field__element--select::after,
+.en__field__element--splitselect .en__field__item:not(.en__field__item--other)::after {
+    content: "\f078";
+    font-family: FontAwesome;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+/* Remove iOS default styles */
+.content-container input[type="text"],
+.content-container input[type="email"], 
+.content-container input[type="tel"] {
+    border-radius: 0;
+}
+
+/*
+##############################################################
+# Media queries
+##############################################################
+*/
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) {
+    /* prevent EN from changing the last step navigation button section to display:block */
+    .en__component--row.en__component--advrow:nth-last-child(2) {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .en__field--paymenttype .en__field__element--radio {
+        width: auto;
+    }
+
+    .en__field--paymenttype .en__field__element--radio > .en__field__item {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    /* GiveUBC header and footer */
+    .ubc-logo {
+        width: auto;
+    }
+
+    .ubc-logo a {
+        background-position: -2px -300px;
+    }
+
+    #ubc7-logo a {
+        display: block;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        text-indent: 200%;
+        white-space: nowrap;
+    }
+
+    #ubc7-logo {
+        /* background-image: url("https://cdn.ubc.ca/clf/7.0.4/img/ubc7-clf-sprite-blue.png"); */
+        background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/ubc7-clf-sprite-white.png?v=1596576573000");
+        background-repeat: no-repeat;
+        background-position: 21px 14px;
+        /* margin-left: -15px; */
+        min-width: 115px;
+        height: 100%;
+    }
+
+    #ubc7-wordmark a {
+        display: block;
+        height: 100%;
+        /* width: 100%; */
+        width: 680px;
+        overflow: hidden;
+        text-indent: 200%;
+        white-space: nowrap;
+    }
+
+    .title-section {
+        width: 100%;
+    }
+
+    #ubc7-wordmark {
+        background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/ubc7-clf-sprite-white.png?v=1596576573000");
+        background-position: -64px -110px;
+        width: 100%;
+        height: 64px;
+        border-bottom: none;
+    }
+
+    .give-ubc {
+        margin-left: 34px;
+    }
+
+    .logo-section {
+        display: block;
+        max-width: 70px;
+        height: 115px;
+    }
+
+    .title-section {
+        border-left: 1px solid #d7e0e7;
+        margin-left: 10px;
+    }
+
+    .outer-container {
+        /* background: #002145; */
+        /* padding: 0 14px; */
+    }
+
+    .footer-univeristy-top {
+        padding: 37.5px 22px;
+    }
+
+    .footer-univeristy-legal {
+        width: calc(100% - 56px);
+    }
+    /* GiveUBC header and footer end */
+
+    .content-container {
+        width: 100%;
+        margin: 1px 0;
+    }
+
+    .r1 {
+        flex-direction: column;
+    }
+
+    .r2 {
+        width: 768px;
+        padding: 0;
+    }
+
+    .r2-col1 {
+        margin-bottom: 60px;
+    }
+
+    .r3 {
+        display: flex;
+    }
+
+    .r3-col2 {
+        border-left: 2px solid #C3D0DB;
+    }
+
+    form {
+        width: 523px;
+        padding: 0 40px;
+    }
+
+    form h2 {
+        font-size: 32px;
+    }
+
+    /* Last page navigation button adjustments */
+    form > .en__component--advrow:nth-last-child(2) .en__component--advcolumn {
+        width: auto;
+        padding-bottom: 0 20px;
+    }
+
+    .form-header {
+        margin-left: 20px;
+    }
+    .form-header-title {
+        font-size: 3rem;
+    }
+
+    .step-item a {
+        padding: 17px 0 17px 20px;
+    }
+
+    /* Step navigation adjustments */
+    .step-nav-container {
+        display: block;
+        position: relative;
+        width: 243px;
+        min-width: 243px;
+    }
+
+    .step-nav {
+        font-size: 20px;
+        width: 243px;
+        min-width: 243px;
+    }
+
+    .sticky-bottom.step-nav {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .step-list {
+        flex-direction: column;
+    }
+
+    .step-item {
+        flex: 0 1 auto;
+    }
+
+    .sticky-nav {
+        position: fixed;
+        top: 0;
+        /* height: 100%; */
+        width: 243px;
+        min-width: 243px;
+    }
+
+    /* Donation amount field adjustments */
+    .en__field--donationAmt .en__field__element--radio > .en__field__item {
+        flex: 0 0 5.625rem;
+        margin-bottom: 18px;
+        padding-right: 1.125rem;
+    }
+
+    .en__field--donationAmt .en__field__element--radio > .en__field__item:nth-last-child(2) {
+        flex: 0 0 5.625rem;
+    }
+
+    .en__field--donationAmt .en__field__element--radio > .en__field__item.en__field__item--other {
+        flex: 0 0 5.625rem;
+        padding-right: 0px;
+    }
+
+    .en__field--donationAmt .en__field__element--radio > .en__field__item:nth-child(4) ~ .en__field__item {
+        margin-bottom: 0;
+        height: 3rem;
+    }
+
+    .en__field--paymenttype .en__field__element--radio > .en__field__item:last-child {
+        padding-right: 0;
+    }
+
+    .en__field--donationAmt .en__field__element--radio {
+        justify-content: flex-start;
+    }
+
+    .en__field--donationAmt .en__field__input--other {
+        width: 3.75rem;
+    }
+
+    /* Accordion button adjustments */
+    .other-accordion-button,
+    .privacy-and-security-accordion-button {
+        font-size: 1.25rem;
+    }
+
+    /* Step navigation button adjustments */
+    .en__submit button,
+    .step-nav-button--fluid {
+        width: 10rem;
+    }
+
+    /* Payment frequency style */
+    .en__field--othamt4 .en__field__element--radio {
+        justify-content: flex-start;
+    }
+
+    /* Radio button general style */
+    .en__field__element--radio > .en__field__item {
+        flex: 0 0 6.25rem;
+        padding-right: 1.25rem;
+    }
+
+    .en__field--radio.en__field--NOT_TAGGED_50 .en__field__element--radio {
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    /* Give UBC header and footer */
+    .ubc-logo a {
+        background-position: -2px -226px;
+        width: 400px;
+    }
+
+    #ubc7-wordmark {
+        width: 600px;
+    }
+
+    .outer-container {
+        /* padding: 0 40px; */
+    }
+
+    .footer-univeristy-top {
+        padding: 37.5px 50px;
+    }
+
+    .footer-univeristy-legal {
+        width: calc(100% - 100px);
+    }
+    /* Give UBC header and footer end */
+
+    .r2 {
+        width: 1024px;
+    }
+
+    form {
+        width: 543px;
+        padding: 0 48px 0 50px;
+    }
+
+    .form-header {
+        width: 788px;
+        margin-left: 50px;
+    }
+
+    .step-nav-container {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .step-nav {
+        width: 260px;
+        min-width: 260px;
+    }
+
+    .step-item a {
+        padding: 17px 0 17px 50px;
+    }
+}
+
+@media screen and (min-width: 1190px) {
+/* @media screen and (min-width: 1024px) { */
+    /* GiveUBC header and footer */
+    #ubc7-logo {
+        background-position: 32px 14px;
+    }
+    #ubc7-wordmark {
+        background-position: -83px 12px;
+        width: 600px;
+    }
+
+    .footer-univeristy-top {
+        padding: 37.5px 60px;
+    }
+
+    .footer-univeristy-legal {
+        width: calc(100% - 120px);
+    }
+
+    .title-section {
+        margin-left: 2.564102564102564%;
+    }
+    /* GiveUBC header and footer end */
+
+    form {
+        width: 500px;
+        padding: 0 28px 0 30px;
+    }
+
+    .r1 {
+        flex-direction: row;
+        width: 1170px;
+    }
+
+    .r2 {
+        /* width: 865px; */
+        width: 775px;
+        margin: 50px 30px 30px 0;
+    }
+
+    .form-header {
+        width: 698px;
+    }
+
+    .step-item a {
+        padding: 17px 0 17px 50px;
+    }
+
+    .hero-image-wrapper {
+        width: 415px;
+        min-width: 415px;
+        /* background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/give-ubc-hero-vertical-sample.jpg?v=1594073213000"); */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 0;
+        padding-bottom: 0;
+        height: 745px;
+        mask-image: linear-gradient(linear, left 90%, left bottom, from(rgba(0,0,0,1)), to(rgba(0,0,0,0)))
+    }
+
+    .hero-image-container {
+        position: relative;
+        min-width: 415px;
+        background-color: #002105;
+    }
+
+    .sticky-hero.hero-image-wrapper {
+        position: fixed;
+        top: 0;
+    }
+
+    .sticky-bottom.hero-image-wrapper {
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    form {
+        width: 543px;
+        padding: 0 48px 0 50px;
+    }
+
+    .r1 {
+        /* flex-direction: row; */
+        /* width: 1280px; */
+    }
+
+    .r2 {
+        width: 865px;
+        margin: 50px 30px 30px 0;
+    }
+}
+
+
+.p, .page-filters button, .thinkingblocks-contact-form input, .thinkingblocks-contact-form textarea, .thinkingblocks-quote span.author, .thinkingblocks-tabs div.label, p {
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: .0375em;
+}
+
+.thinkingblocks-Footer {
+  background: white;
+  font-size: 0.9375rem;
+}
+
+.thinkingblocks-Footer .outer-container {
+  width: 100%;
+  border-top: 2px solid #C3D0DB;
+}
+
+.thinkingblocks-Footer .footer-top,
+.thinkingblocks-Footer .footer-bottom,
+.thinkingblocks-Footer .footer-univeristy-top {
+  position: relative;
+  /* width: 100%; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-flow: wrap;
+      flex-flow: wrap;
+  padding: 37.5px 75px;
+  margin: 0 auto;
+}
+
+.thinkingblocks-Footer .footer-top {
+    color: black;
+}
+
+
+.thinkingblocks-Footer .footer-top ul, 
+.thinkingblocks-Footer .footer-bottom ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+        list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+}
+
+.thinkingblocks-Footer .footer-top span,
+.thinkingblocks-Footer .footer-bottom span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.thinkingblocks-Footer .footer-top p,
+.thinkingblocks-Footer .footer-bottom p {
+    font-size: .9375rem;
+    font-weight: 400;
+    letter-spacing: .00875rem;
+    line-height: 1.75;
+    display: block;
+    /* line-height: 1.5; */
+    white-space: pre-line;
+    color: #002145;
+    /* font-weight: 400; */
+    /* font-size: 1em; */
+    /* font-weight: 400; */
+    /* line-height: 1.5; */
+    /* letter-spacing: .0375em; */
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-top,
+  .thinkingblocks-Footer .footer-bottom,
+  .thinkingblocks-Footer .footer-univeristy-top {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 25px 25px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1261px) {
+  .thinkingblocks-Footer .footer-top,
+  .thinkingblocks-Footer .footer-bottom,
+  .thinkingblocks-Footer .footer-univeristy-top {
+    /* padding: 37.5px 50px; */
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .thinkingblocks-Footer .footer-top,
+  .thinkingblocks-Footer .footer-bottom,
+  .thinkingblocks-Footer .footer-univeristy-top {
+    max-width: 1530px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+}
+
+.thinkingblocks-Footer .footer-top a:not(.top-btn):hover,
+.thinkingblocks-Footer .footer-bottom a:not(.top-btn):hover,
+.thinkingblocks-Footer .footer-univeristy-top a:not(.top-btn):hover {
+  text-decoration: underline;
+}
+
+.thinkingblocks-Footer .footer-university {
+  width: 100%;
+  font-family: 'Arial';
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1021px) {
+  .thinkingblocks-Footer .footer-top > div,
+  .thinkingblocks-Footer .footer-univeristy-top > div {
+    width: 18%;
+  }
+  .thinkingblocks-Footer .footer-top > div:nth-of-type(1),
+  .thinkingblocks-Footer .footer-univeristy-top > div:nth-of-type(1) {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-top,
+  .thinkingblocks-Footer .footer-univeristy-top {
+    /* padding-top: 50px; */
+    padding-bottom: 0;
+  }
+  .thinkingblocks-Footer .footer-top > div,
+  .thinkingblocks-Footer .footer-univeristy-top > div {
+    width: 100%;
+  }
+}
+
+.thinkingblocks-Footer .footer-univeristy-top .ubc-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1021px) {
+  .thinkingblocks-Footer .footer-univeristy-top .ubc-logo {
+    width: 100%;
+    margin-bottom: 37.5px;
+  }
+}
+
+.thinkingblocks-Footer .footer-univeristy-top .ubc-logo > a:first-of-type {
+  margin-right: 12.5px;
+}
+
+.thinkingblocks-Footer .footer-top li {
+  font-size: 0.875rem;
+  line-height: 1.15;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1021px) {
+  .thinkingblocks-Footer .footer-top > div {
+    width: 50%;
+  }
+  .thinkingblocks-Footer .footer-top > div:nth-child(-n + 2) {
+    margin-bottom: 37.5px;
+  }
+  .thinkingblocks-Footer .footer-top > div:nth-child(even) {
+    /* padding-left: 25px; */
+  }
+}
+
+.thinkingblocks-Footer .footer-university b,
+.thinkingblocks-Footer .footer-top b {
+  color: #002145;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  letter-spacing: 1.07px;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-university b,
+  .thinkingblocks-Footer .footer-top b {
+    padding: 12.5px 0;
+    border-bottom: 1px solid rgba(0, 33, 69, 0.35);
+    cursor: pointer;
+  }
+  .thinkingblocks-Footer .footer-university b span,
+  .thinkingblocks-Footer .footer-top b span {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    min-width: auto;
+    padding: 14px;
+    background: transparent;
+    border: none;
+    box-sizing: border-box;
+  }
+  .thinkingblocks-Footer .footer-university b span:before, .thinkingblocks-Footer .footer-university b span:after,
+  .thinkingblocks-Footer .footer-top b span:before,
+  .thinkingblocks-Footer .footer-top b span:after {
+    content: "";
+    position: absolute;
+    background: currentColor;
+  }
+  .thinkingblocks-Footer .footer-university b span:before,
+  .thinkingblocks-Footer .footer-top b span:before {
+    left: 50%;
+    top: 8px;
+    bottom: 8px;
+    width: 2px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+    -webkit-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    transition: opacity 0.3s ease-out;
+  }
+  .thinkingblocks-Footer .footer-university b span:after,
+  .thinkingblocks-Footer .footer-top b span:after {
+    top: 50%;
+    left: 8px;
+    right: 8px;
+    height: 2px;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+.thinkingblocks-Footer .footer-university b {
+  color: white;
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-university b {
+    border-bottom: none;
+    padding: 50px 0 0;
+  }
+  .thinkingblocks-Footer .footer-university b:after {
+    display: none;
+  }
+}
+
+.thinkingblocks-Footer .footer-university ul li {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.thinkingblocks-Footer .footer-top p, .thinkingblocks-Footer .footer-top .thinkingblocks-quote span.author, .thinkingblocks-quote .thinkingblocks-Footer .footer-top span.author,
+.thinkingblocks-Footer .footer-university p,
+.thinkingblocks-Footer .footer-university .thinkingblocks-quote span.author,
+.thinkingblocks-quote .thinkingblocks-Footer .footer-university span.author {
+  margin-top: 0.75em;
+  white-space: normal;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-top p, .thinkingblocks-Footer .footer-top .thinkingblocks-quote span.author, .thinkingblocks-quote .thinkingblocks-Footer .footer-top span.author,
+  .thinkingblocks-Footer .footer-university p,
+  .thinkingblocks-Footer .footer-university .thinkingblocks-quote span.author,
+  .thinkingblocks-quote .thinkingblocks-Footer .footer-university span.author {
+    margin-bottom: 0;
+    line-height: 18px;
+  }
+}
+
+.thinkingblocks-Footer .footer-top p a, .thinkingblocks-Footer .footer-top .thinkingblocks-quote span.author a, .thinkingblocks-quote .thinkingblocks-Footer .footer-top span.author a,
+.thinkingblocks-Footer .footer-university p a,
+.thinkingblocks-Footer .footer-university .thinkingblocks-quote span.author a,
+.thinkingblocks-quote .thinkingblocks-Footer .footer-university span.author a {
+  color: #3e4246;
+  display: inline-block;
+  text-decoration: underline;
+}
+
+.thinkingblocks-Footer .footer-top p span, .thinkingblocks-Footer .footer-top .thinkingblocks-quote span.author span, .thinkingblocks-quote .thinkingblocks-Footer .footer-top span.author span,
+.thinkingblocks-Footer .footer-university p span,
+.thinkingblocks-Footer .footer-university .thinkingblocks-quote span.author span,
+.thinkingblocks-quote .thinkingblocks-Footer .footer-university span.author span {
+  display: block;
+}
+
+.thinkingblocks-Footer .footer-top .footer-contact-information p, .thinkingblocks-Footer .footer-top .footer-contact-information .thinkingblocks-quote span.author, .thinkingblocks-quote .thinkingblocks-Footer .footer-top .footer-contact-information span.author {
+  line-height: 1.75;
+  opacity: 0.8;
+  color: black;
+}
+
+.thinkingblocks-Footer .footer-top .footer-contact-information > a {
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1.25rem;
+  color: #002145;
+  text-decoration: none;
+}
+
+.thinkingblocks-Footer .footer-top ul:not(.social-media) li,
+.thinkingblocks-Footer .footer-university ul li {
+  margin: 12.5px 0;
+}
+
+.thinkingblocks-Footer .footer-top ul:not(.social-media) li:first-of-type,
+.thinkingblocks-Footer .footer-university ul li:first-of-type {
+  margin: 25px 0 12.5px;
+}
+
+.thinkingblocks-Footer .footer-top ul:not(.social-media) li a,
+.thinkingblocks-Footer .footer-university ul li a {
+  opacity: 0.8;
+}
+
+.thinkingblocks-Footer .footer-top ul:not(.social-media) li a:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-bottom ul.social-media {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    padding: 25px 0;
+    border-bottom: solid 1px rgba(0, 33, 69, 0.35);
+  }
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 34px;
+  height: 34px;
+  margin-right: 25px;
+  background: #f4f4f4;
+  color: #002145;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: -webkit-transform 0.6s ease-out;
+  -o-transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li:hover {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-bottom ul.social-media li {
+    margin: 0 1em;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto 40%;
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li .fb {
+  background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/fb.png?v=1615491399000");
+  background-size: auto 50%;
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li .tt {
+  background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/tt.png?v=1615491399000");
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li .in {
+  background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/in.png?v=1615491399000");
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li .yt {
+  background-image: url("https://aaf1a18515da0e792f78-c27fdabe952dfc357fe25ebf5c8897ee.ssl.cf5.rackcdn.com/1730/yt.png?v=1615491399000");
+  background-size: auto 60%;
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li:first-of-type {
+  margin-left: 0;
+}
+
+.thinkingblocks-Footer .footer-bottom ul.social-media li:last-of-type {
+  margin-right: 0;
+}
+
+.thinkingblocks-Footer .footer-bottom {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.thinkingblocks-Footer .footer-bottom a.top-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  color: #002145;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  font-family: 'Whitney SSm A', 'Whitney SSm B', Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.thinkingblocks-Footer .footer-bottom a.top-btn div {
+  position: relative;
+  margin-left: 25px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #002145;
+  -webkit-transition: -webkit-transform 0.6s ease-out;
+  transition: -webkit-transform 0.6s ease-out;
+  -o-transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out;
+  transition: transform 0.6s ease-out, -webkit-transform 0.6s ease-out;
+}
+
+.thinkingblocks-Footer .footer-bottom a.top-btn div:hover {
+  -webkit-transform: scale(0.95);
+      -ms-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+.thinkingblocks-Footer .footer-bottom a.top-btn div:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  content: ' ';
+}
+
+.thinkingblocks-Footer .footer-bottom a.top-btn div:after {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  width: 23%;
+  height: 23%;
+  border-top: 2px solid #002145;
+  border-right: 2px solid #002145;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-bottom a.top-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+    padding: 12.5px 0;
+    font-size: 16px;
+    font-weight: 600;
+  }
+}
+
+.thinkingblocks-Footer .footer-university,
+.thinkingblocks-Footer .footer-univeristy-legal {
+  background: #002145;
+  color: white;
+}
+
+.thinkingblocks-Footer .footer-univeristy-legal {
+  border-top: solid 0.0625rem rgba(255, 255, 255, 0.6);
+  padding: 18.75px 0;
+  width: calc(100% - 150px);
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-univeristy-legal {
+    margin-top: 25px;
+    padding: 25px 0;
+    width: calc(100% - 50px);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1261px) {
+  .thinkingblocks-Footer .footer-univeristy-legal {
+    width: calc(100% - 100px);
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  .thinkingblocks-Footer .footer-univeristy-legal {
+    max-width: 1380px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1601px) {
+  body {
+    font-size: 18px;
+  }
+}
+.p, p, .thinkingblocks-quote span.author, .page-filters button, .thinkingblocks-contact-form input,
+.thinkingblocks-contact-form textarea, .thinkingblocks-tabs div.label {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5;
+  letter-spacing: 0.0375em;
+}
+
+
+.thinkingblocks-Footer .footer-univeristy-legal a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 8px 0;
+}
+
+.thinkingblocks-Footer .footer-univeristy-legal a:after {
+  content: '|';
+  padding: 0 12.5px;
+}
+
+.thinkingblocks-Footer .footer-univeristy-legal a:last-of-type::after {
+  display: none;
+}
+
+.thinkingblocks-Footer .footer-univeristy-legal a:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+  .thinkingblocks-Footer .footer-university-left,
+  .thinkingblocks-Footer .footer-university-center,
+  .thinkingblocks-Footer .footer-university-right {
+    padding-top: 25px;
+  }
+  .thinkingblocks-Footer .footer-top .js-mobile-collapse ul, .thinkingblocks-Footer .footer-top .js-mobile-collapse p, .thinkingblocks-Footer .footer-top .js-mobile-collapse .thinkingblocks-quote span.author, .thinkingblocks-quote .thinkingblocks-Footer .footer-top .js-mobile-collapse span.author,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse ul,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse p,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse .thinkingblocks-quote span.author,
+  .thinkingblocks-quote .thinkingblocks-Footer .footer-university .js-mobile-collapse span.author {
+    display: none;
+  }
+  .thinkingblocks-Footer .footer-top .js-mobile-collapse b,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse b {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+  }
+  .thinkingblocks-Footer .footer-top .js-mobile-collapse.expanded ul, .thinkingblocks-Footer .footer-top .js-mobile-collapse.expanded p, .thinkingblocks-Footer .footer-top .js-mobile-collapse.expanded .thinkingblocks-quote span.author, .thinkingblocks-quote .thinkingblocks-Footer .footer-top .js-mobile-collapse.expanded span.author,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse.expanded ul,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse.expanded p,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse.expanded .thinkingblocks-quote span.author,
+  .thinkingblocks-quote .thinkingblocks-Footer .footer-university .js-mobile-collapse.expanded span.author {
+    display: block;
+  }
+  .thinkingblocks-Footer .footer-top .js-mobile-collapse.expanded b > span::before,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse.expanded b > span::before {
+    opacity: 0;
+  }
+  .thinkingblocks-Footer .footer-top .js-mobile-collapse.expanded b:after,
+  .thinkingblocks-Footer .footer-university .js-mobile-collapse.expanded b:after {
+    -webkit-transform: translate(-20%, -20%) rotate(135deg);
+        -ms-transform: translate(-20%, -20%) rotate(135deg);
+            transform: translate(-20%, -20%) rotate(135deg);
+  }
+}
+
+.thinkingblocks-Footer .ubc-crest {
+  height: 2.66125rem;
+  width: 1.95188rem;
+}
+
+.thinkingblocks-Footer .ubc-wordmark.desktop {
+  width: 19.0625rem;
+}
+
+.thinkingblocks-Footer .ubc-wordmark.mobile {
+  width: 10rem;
+}
