@@ -1,0 +1,418 @@
+<style> 
+ 
+  .title {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration:none;
+  }
+  
+  .larger {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .larger-a {
+    //color:#D19160;
+    color:#538ADC;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .larger-a:hover {
+    //color:#FF0000;
+    color:#77C9F3;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: none;
+    text-decoration:underline;
+  }
+  
+  select {
+    font-family: Tahoma;
+    font-size: 11px;
+  }
+   
+  .white {
+    color:#FFFFFF;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .blue {
+    color:#3B5998;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: none;
+    text-decoration:none;
+  } 
+  
+  .red {
+    color:#FF0000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .menu {
+    color:#FFFFFF;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .menu:hover {
+    color:#77C9F3;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .alternate {
+    color:#3B5998;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .alternate:hover {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:underline;
+  }
+  
+  a {
+    //color:#D19160;
+    color:#538ADC;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  a:hover {
+    //color:#FF0000;
+    color:#77C9F3;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:underline;
+  }
+ 
+  .bordertable {
+    border-width: 1px;
+    border-color: #3B5998;
+    border-style: solid;
+  }
+ 
+  .dashedtable {
+    border-width: 1px;
+    border-color: #3B5998;
+    border-style: dashed;
+  }
+ 
+  .bottomborder {
+    border-style:solid;
+    border-color: #3B5998;
+    border-top-width:0px;
+    border-bottom-width:1px;
+    border-right-width:0px;
+    border-left-width:0px;
+  }
+ 
+  .one-column {
+    color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+    border-style:solid;
+    border-color: #3B5998;
+    border-top-width:1px;
+    border-bottom-width:0px;
+    border-right-width:1px;
+    border-left-width:1px;
+  }
+ 
+  .text {
+    font-Family: Serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  .td0 {
+    color:#000000;
+    background-color:#D9DFEA;
+    border: 0;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .td1 {
+    color:#000000;
+    background-color:#86A1CE;
+    border: 0;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }    
+ 
+  .schedule_table {
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: #000000;
+  }
+ 
+  .top-border {
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color: #3B5998;
+  }
+  
+  .schedule {
+    color:#000000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 0px;
+    border-top-width: 0px;
+    border-style: solid;
+    border-color:#000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+ 
+  .border-td {
+    color:#000000;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-width: 1px;
+    border-style: solid;
+    border-color:#3B5998;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  td {
+    color:#000000;
+    border: 0;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    font-weight: none;
+    text-decoration:none;
+  }
+  
+  .inputtext {
+    border:double;
+    border-width:1;
+    border-color:#555555;
+    background-color:#D9DFEA;
+    font-size:11px;
+    color: #000000;
+    font-Family: Tahoma, Arial, Helvetica, sans-serif;
+  }
+  
+  .inputsubmit {
+    border-style:solid;
+    border-top-width:1px;
+    border-bottom-width:2px;
+    border-right-width:2px;
+    border-left-width:1px;
+    border-top-color:#D9DFEA;
+    border-bottom-color:#3B5998;
+    border-right-color:#3B5998;
+    border-left-color:#D9DFEA;
+    background-color:#538ADC;
+    font-family:Tahoma, arial;
+    font-size:11px;
+    color:#FFFFFF;
+    font-weight:none;
+  }
+ 
+  <!--
+  #8EA7C5 - blue
+  #D9DFEA - grey
+  59 89 152                (#3B5998)
+  217 223 234              (#D9DFEA)
+  83 138 220 - link normal (#538ADC)
+  119 201 243 - link down  (#77C9F3)
+  -->
+  
+</style>
+<html xmlns:fb="http://www.facebook.com/2008/fbml">
+<title>TheAmmarbook | Privacy Policy</title> 
+<link rel="stylesheet" href="style.css"> 
+<link rel="shortcut icon" href="favicon.ico"> 
+
+<center>
+
+<table class="bordertable" cellspacing=0 cellpadding=0 border=0 width=700>
+
+  <tr><td>
+
+      <table class="bottomborder" cellspacing=0 cellpadding=0 border=0 width=100%>
+
+      <tr><td width=205 bgcolor=#3B5998>
+
+          </td>
+
+          <td><table cellspacing=0 cellpadding=0 border=0 width=100%><tr><td>
+
+          <table cellspacing=0 cellpadding=0 border=0 width=100%>
+
+          <tr><td><a href='index.html'><img src='logo-right.jpg' border=0></a></td>
+
+          <td width=100% bgcolor=#3B5998>&nbsp;</td></tr></table></td></tr>
+
+          <tr><td><table cellspacing=0 cellpadding=4 border=0 width=100%><tr height=21>
+
+			<td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu" href="login.html">login</a></td>
+              <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu" href="register.html">register</a></td>
+              <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu" href="about.html">about</a></td>
+              <td bgcolor="#3B5998" valign="bottom">&nbsp;<a class="menu" href="faq.html">faq</a></td>
+
+                    <td bgcolor=#3B5998 width=100%>&nbsp;</td>
+
+          </tr></table></td>
+
+          </tr></table>
+
+      </td></tr></table>
+
+  </td></tr>
+
+  <tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%>
+
+      <tr><td valign=top>
+
+      <table class="dashedtable" cellspacing=0 cellpadding=0 border=0 width=105>
+
+        <tr><td>
+
+		<table cellspacing="0" cellpadding="2" border="0" width="100%">
+          <tr>
+            <td align="right">
+              <form action="editprofile.html">
+                Email:<br><input class="inputtext" type="text" name="email"><br>
+                Password:<br><input class="inputtext" type="pass" name="pasword"><br>
+                <center><input class="inputsubmit" type="submit" value="login">&nbsp;&nbsp;<input class="inputsubmit" type="button" value="register" onclick='location="register.html";'></center>
+              </form>
+            </td>
+          </tr>
+        </table>
+	      
+
+              </td></tr>
+
+      </table>
+
+      </td><td width=595 valign=top>
+
+        <table class="bordertable" cellspacing=0 cellpadding=0 border=1 width=100%><tr><td>
+
+
+
+	  <table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>TheAmmarbook Privacy Policy</td></tr></table><center><p class='title'>[ Privacy Policy ]</p><center><table cellspacing=0 cellpadding=0 width=95% border=0><tr><td><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Coverage</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>This privacy statement covers the site www.TheAmmarbook.com.  Because we want to
+demonstrate our commitment to our users' privacy, we will disclose our information
+and privacy practices below. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>About TheAmmarbook and the Information We Collect</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>TheAmmarbook is an online directory and social networking community that helps 
+people find friends and other people.  To accomplish this, our users create their 
+own profiles and privacy settings, and some personal information we ask for is 
+displayed to people in the groups specified in the users' privacy settings. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Information Collected by TheAmmarbook</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>TheAmmarbook collects user-submitted account information such as name and email
+address to identify users and send notifications related to use of the site.
+TheAmmarbook also collects user-submitted profile information such as gender, 
+  field, location, courses, etc.
+<p>TheAmmarbook also collects information that is not personally identifiable and
+not submitted directly by users, such as browser type and IP address.  This
+information is gathered for all users to the site.  
+<p>TheAmmarbook collects information from other sources, such as newspapers and 
+instant messaging services.  This information is gathered regardless of use of
+the site. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Use of Information Obtained by TheAmmarbook</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>Profile information, as well as name, email and photo, are displayed to people in the
+groups specified in a user's privacy settings to support the function of the 
+site.  Except when inviting a friend to join the site, a user's name and email will
+never be given to anyone outside the site.  No information submitted to TheAmmarbook
+will be available to any user of the site who does not belong to at least one of the
+groups specified in a user's privacy settings.
+<p>We use server, IP and browser type for site administration.  We also use information 
+not directly submitted to TheAmmarbook by users to supplement users' profiles unless 
+they specify that they do not want this done in their privacy settings. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Spam Policy</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>Email addresses will never be sold to anyone, and they will not be used for spam or
+any other purpose outside of the site itself. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Links</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>This site may contain links to other websites.  TheAmmarbook is not responsible for
+the privacy practices of other web sites.  We encourage our users to be aware when
+they leave our site and to read the privacy statements of each and every web site that
+collects personally identifiable information.  This privacy statement applies solely
+to information collected by this web site. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Use of Cookies</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>A cookie is a piece of data stored on the user's computer tied to information about
+the user.  We use session ID cookies to confirm that users are logged in.  These cookies
+terminate once the users close the browser.  We do not and will not use cookies to collect
+private information from any user. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Third Party Advertising</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>Advertisements that appear on this web site are delivered to users by our advertising
+partners.  Our advertising partners may set cookies.  Doing this allows the advertising
+network to recognize your computer each time they send you an advertisement.  In this
+way, they may compile information about where you, or others who are using your computer,
+saw their advertisements and determine which advertisements are clicked.  This information
+allows an advertising network to deliver targeted advertisements that they believe will be
+of most interest to you.  TheAmmarbook does not have access to or control of the cookies
+that may be placed by the third party advertising servers of ad networks.
+<p>This privacy statement covers the use of cookies by TheAmmarbook and does not cover
+the use of cookies by any of its advertisers. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Changing or Removing Information</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>TheAmmarbook users may modify or remove any of their personal information at any time
+by logging into their account.  Information will be updated immediately and old
+information will never be displayed to any user of the site. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Security</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>TheAmmarbook accounts are password-protected.  This web site takes every precaution to
+protect our users' information.  Passwords are stored in hashed form in our database,
+and different sections of users' profiles are stored in different parts of our database
+to separate access to all of the information and make it more difficult to piece
+everything together.  If you have any questions about the security of our web site,
+please <a href='contact.html'>contact us</a>. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Changes in Our Privacy Policy</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>We reserve the right to change our privacy policy at any time.  If we do this, we will post
+the changes on our web site so our users are always aware of what information we collect,
+how we use it, and under what circumstances, if any, we disclose it.  If we are going to
+use users' personally identifiable information in a manner different from that stated at
+the time of collection, we will notify users via email. <br>&nbsp;</td></tr></table></td></tr></table><p><center><table class='bordertable' cellspacing=0 cellpadding=0 width=90%><tr><td><table cellspacing=0 cellpadding=2 border=0 width=100%> 
+<tr><td class='white' bgcolor=#3B5998>Contacting the Web Site</td></tr></table>&nbsp;<br><center><table cellspacing=0 cellpadding=2 border=0 width=95%><tr><td>If you have any questions about this privacy statement, the practices of this site, or
+your dealings with this web site, please <a href='contact.html'>contact us</a>. <br>&nbsp;</td></tr></table></td></tr></table><p></td></tr></table> <br>&nbsp;</td></tr></table>
+
+  </td></tr></table>
+
+  <center>
+
+<p><a href="about.html">about</a>&nbsp;&nbsp;&nbsp;<a href="contact.html">contact</a>&nbsp;&nbsp;&nbsp;<a href="faq.html">faq</a>&nbsp;&nbsp;&nbsp;<a href="terms.html">terms</a>&nbsp;&nbsp;&nbsp;<a href="privacy.html">privacy</a><br>a Ammar Basharat Production<br>TheAmmarbook &copy; 2024<br>&nbsp;</p>
+
+
+  </center>
+
+  </td></table></table>
