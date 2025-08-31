@@ -1,19 +1,4 @@
-RewriteEngine ON
-##Excluding Indexes and MultiViews options here.
-Options -Indexes -MultiViews
-
-##Rule for url http://localhost:80/test here.
-RewriteRule ^(test)/?$ $1/category [R=301,L]
-RewriteRule ^(test/category)/?$ $1.php [NC,L]
-
-##Rule for forbidding html OR htm OR php extension files.
-RewriteRule \.(html|php|Htm)/?$ - [F,NC,L]
-
-##Rule for adding / at end of urls.
-RewriteCond %{REQUEST_URI} /+[^\.]+$
-RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
-
-##Rules for non-existing pages to be served here.
-RewriteCond %{REQUEST_FILENAME} !-f
+RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^ core.php [QSA,L]
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L] 
