@@ -1,8 +1,19 @@
-#mode_rerwrite start here
-    RewriteEngine On 
-    # does not apply to existing directores, meaning that if the folder exists on server then don't change anything and don't run the rule.
-    RewriteCond %{REQUEST_FILENAME} !-d 
-    #Check for file in directory with .html extension 
-    RewriteCond %{REQUEST_FILENAME} !-f 
-    #Here we actually show the page that has .html extension
-    RewriteRule ^([^\.]+)$ $1.html [NC, L]
+RewriteEngine ON
+##Excluding Indexes and MultiViews options here.
+Options -Indexes -MultiViews
+
+##Rule for url http://localhost:80/test here.
+RewriteRule ^(test)/?$ $1/category [R=301,L]
+RewriteRule ^(test/category)/?$ $1.php [NC,L]
+
+##Rule for forbidding html OR htm OR php extension files.
+RewriteRule \.(html|php|Htm)/?$ - [F,NC,L]
+
+##Rule for adding / at end of urls.
+RewriteCond %{REQUEST_URI} /+[^\.]+$
+RewriteRule ^(.+[^/])$ %{REQUEST_URI}/ [R=301,L]
+
+##Rules for non-existing pages to be served here.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^ core.php [QSA,L]
